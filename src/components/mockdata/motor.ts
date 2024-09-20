@@ -29,11 +29,9 @@
 // import pic4 from "../motor/menu/assets5/pic4.jpg";
 // import pic5 from "../motor/menu/assets5/pic5.jpg";
 
-import { CampCar } from "../../data";
+import { MotorProps } from "../../data";
 
-
-
-export const campcar: CampCar = {
+export const campcar: MotorProps = {
   maindata: [
     {
       id: 1,

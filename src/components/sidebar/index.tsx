@@ -9,8 +9,9 @@ import Typography from "@mui/joy/Typography";
 import ModalClose from "@mui/joy/ModalClose";
 import Menu from "@mui/icons-material/Menu";
 import Search from "@mui/icons-material/Search";
+import { Navlink } from "./style";
 
-export default function DrawerMobileNavigation() {
+export default function SideBar() {
   const [open, setOpen] = React.useState(false);
 
   return (
@@ -42,52 +43,37 @@ export default function DrawerMobileNavigation() {
           </Typography>
           <ModalClose id="close-icon" sx={{ position: "initial" }} />
         </Box>
-        <Input
-          size="sm"
-          placeholder="Search"
-          variant="plain"
-          endDecorator={<Search />}
-          slotProps={{
-            input: {
-              "aria-label": "Search anything",
-            },
-          }}
-          sx={{
-            m: 3,
-            borderRadius: 0,
-            borderBottom: "2px solid",
-            borderColor: "neutral.outlinedBorder",
-            "&:hover": {
-              borderColor: "neutral.outlinedHoverBorder",
-            },
-            "&::before": {
-              border: "1px solid var(--Input-focusedHighlight)",
-              transform: "scaleX(0)",
-              left: 0,
-              right: 0,
-              bottom: "-2px",
-              top: "unset",
-              transition: "transform .15s cubic-bezier(0.1,0.9,0.2,1)",
-              borderRadius: 0,
-            },
-            "&:focus-within::before": {
-              transform: "scaleX(1)",
-            },
-          }}
-        />
+
         <List
           size="lg"
           component="nav"
           sx={{
             flex: "none",
-            fontSize: "xl",
-            "& > div": { justifyContent: "center" },
+            fontSize: "16px",
+            fontWeight: 500,
           }}
         >
-          <ListItemButton sx={{ fontWeight: "lg" }}>Home</ListItemButton>
-          <ListItemButton>About</ListItemButton>
-          <ListItemButton>Studio</ListItemButton>
-          <ListItemButton>Contact</ListItemButton>
+          <Navlink to={"/motor"}>
+            <ListItemButton>Motor</ListItemButton>
+          </Navlink>
+          <Navlink to={"/caravan"}>
+            <ListItemButton>Caravan</ListItemButton>
+          </Navlink>
+          <Navlink to={"/tuning"}>
+            <ListItemButton>Tuning Car</ListItemButton>
+          </Navlink>
+          <Navlink to={"/usedCar"}>
+            <ListItemButton>Used Car</ListItemButton>
+          </Navlink>
+          <Navlink to={"/camping"}>
+            <ListItemButton>Camping Place</ListItemButton>
+          </Navlink>
+          <Navlink to={"/carousel"}>
+            <ListItemButton>Carousel</ListItemButton>
+          </Navlink>
+          <Navlink to={"/usersList"}>
+            <ListItemButton>Users List</ListItemButton>
+          </Navlink>
         </List>
       </Drawer>
     </React.Fragment>

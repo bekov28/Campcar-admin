@@ -29,9 +29,9 @@
 // import inside4 from "../caravan/menu/assets5/inside4.jpg";
 // import inside5 from "../caravan/menu/assets5/inside5.jpg";
 
-import { CampCarCaravan } from "../../data";
+import { CaravanProps } from "../../data";
 
-export const campcarCaravan: CampCarCaravan = {
+export const campcarCaravan: CaravanProps = {
   maindata: [
     {
       id: 1,

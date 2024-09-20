@@ -29,9 +29,7 @@
 // import picture4 from "../tuning/menu/assets5/picture4.jpg";
 // import picture5 from "../tuning/menu/assets5/picture5.jpg";
 
-import { CampCarTuning } from "../../data";
-
-export const campcarTuning: CampCarTuning = {
+export const campcarTuning = {
   maindata: [
     {
       id: 1,

@@ -29,9 +29,9 @@
 // import photo4 from "../usedCar/menu/assets5/photo4.jpg";
 // import photo5 from "../usedCar/menu/assets5/photo5.jpg";
 
-import { CampCarUsedCar } from "../../data";
+import { UsedCarProps } from "../../data";
 
-export const campcarUsedCar: CampCarUsedCar = {
+export const campcarUsedCar: UsedCarProps = {
   maindata: [
     {
       id: 1,

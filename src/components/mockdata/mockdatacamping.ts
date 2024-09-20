@@ -2,9 +2,7 @@
 // import img2 from "../camping/assets/img-2.svg";
 // import img3 from "../camping/assets/img-3.svg";
 
-import { CampCarCamping } from "../../data";
-
-export const campcarCampingPlace: CampCarCamping = {
+export const campcarCampingPlace = {
   maindata: [
     {
       id: 1,
