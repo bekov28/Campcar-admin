@@ -1,10 +1,23 @@
 import { Button, Sheet, Table, Typography } from "@mui/joy";
 import { CaravanProps } from "../../data";
-
+import ModalComponent from "./Modal/modalCaravan";
+import ModalCaravan from "./Modal/modalCaravan";
 
 const CaravanComponent = (props: CaravanProps) => {
   return (
     <div style={{ padding: "2%" }}>
+      <div>
+        <Typography
+          sx={{
+            fontSize: 44,
+            fontWeight: 600,
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          Caravan
+        </Typography>
+      </div>
       <div
         style={{
           display: "flex",
@@ -15,7 +28,7 @@ const CaravanComponent = (props: CaravanProps) => {
         <Typography sx={{ fontSize: 24, fontWeight: 600 }}>
           Caravan Data List
         </Typography>
-        <Button variant="solid">Add New Caravan</Button>
+        <ModalCaravan />
       </div>
       <Sheet
         variant="outlined"

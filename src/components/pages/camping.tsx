@@ -1,9 +1,22 @@
 import { Button, Sheet, Table, Typography } from "@mui/joy";
 import { CampingProps, UsedCarProps } from "../../data";
+import ModalCampingPlace from "./Modal/modalCampingPlace";
 
 const CampingComponent = (props: CampingProps) => {
   return (
     <div style={{ padding: "2%" }}>
+      <div>
+        <Typography
+          sx={{
+            fontSize: 44,
+            fontWeight: 600,
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          Camping Place
+        </Typography>
+      </div>
       <div
         style={{
           display: "flex",
@@ -14,7 +27,7 @@ const CampingComponent = (props: CampingProps) => {
         <Typography sx={{ fontSize: 24, fontWeight: 600 }}>
           Camping Data List
         </Typography>
-        <Button variant="solid">Add New Camping Place</Button>
+        <ModalCampingPlace />
       </div>
       <Sheet
         variant="outlined"

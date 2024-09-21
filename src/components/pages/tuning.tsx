@@ -1,9 +1,22 @@
 import { Button, Sheet, Table, Typography } from "@mui/joy";
 import { TuningProps } from "../../data";
+import ModalTuning from "./Modal/modalTuning";
 
 const TuningComponent = (props: TuningProps) => {
   return (
     <div style={{ padding: "2%" }}>
+      <div>
+        <Typography
+          sx={{
+            fontSize: 44,
+            fontWeight: 600,
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          Tuning Car
+        </Typography>
+      </div>
       <div
         style={{
           display: "flex",
@@ -14,7 +27,7 @@ const TuningComponent = (props: TuningProps) => {
         <Typography sx={{ fontSize: 24, fontWeight: 600 }}>
           Tuning Data List
         </Typography>
-        <Button variant="solid">Add New Tuning Car</Button>
+        <ModalTuning />
       </div>
       <Sheet
         variant="outlined"

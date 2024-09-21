@@ -1,9 +1,22 @@
 import { Button, Sheet, Table, Typography } from "@mui/joy";
 import { MotorProps } from "../../data";
+import ModalComponent from "./Modal/modalMotor";
 
 const MotorComponent = (props: MotorProps) => {
   return (
     <div style={{ padding: "2%" }}>
+      <div>
+        <Typography
+          sx={{
+            fontSize: 44,
+            fontWeight: 600,
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          Motor
+        </Typography>
+      </div>
       <div
         style={{
           display: "flex",
@@ -14,7 +27,8 @@ const MotorComponent = (props: MotorProps) => {
         <Typography sx={{ fontSize: 24, fontWeight: 600 }}>
           Motor Data List
         </Typography>
-        <Button variant="solid">Add New Motor</Button>
+
+        <ModalComponent />
       </div>
       <Sheet
         variant="outlined"

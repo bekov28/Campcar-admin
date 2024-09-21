@@ -1,9 +1,22 @@
 import { Button, Sheet, Table, Typography } from "@mui/joy";
 import { UsedCarProps } from "../../data";
+import ModalUsedCar from "./Modal/modalUsedCar";
 
 const UsedCarComponent = (props: UsedCarProps) => {
   return (
     <div style={{ padding: "2%" }}>
+      <div>
+        <Typography
+          sx={{
+            fontSize: 44,
+            fontWeight: 600,
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          Used Car
+        </Typography>
+      </div>
       <div
         style={{
           display: "flex",
@@ -14,7 +27,7 @@ const UsedCarComponent = (props: UsedCarProps) => {
         <Typography sx={{ fontSize: 24, fontWeight: 600 }}>
           Used Car Data List
         </Typography>
-        <Button variant="solid">Add New Used Car</Button>
+        <ModalUsedCar />
       </div>
       <Sheet
         variant="outlined"
